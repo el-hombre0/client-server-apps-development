@@ -1,0 +1,9 @@
+apply plugin: 'java'
+apply plugin: 'application'
+repositories{
+    mavenCentral()
+}
+mainClassName = 'src.main.java.task2.Task2'
+dependencies{
+    implementation group: 'commons-io', name: 'commons-io', version: '2.13.0'
+}
