@@ -210,7 +210,7 @@ DEFAULT_JVM_OPTS=""
 
 set -- \
         -classpath "$CLASSPATH" \
-        src.main.java.task2.Task2 \
+         \
         "$@"
 
 # Stop when "xargs" is not available.

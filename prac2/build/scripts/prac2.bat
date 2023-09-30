@@ -72,7 +72,7 @@ set CLASSPATH=%APP_HOME%\lib\prac2.jar;%APP_HOME%\lib\commons-io-2.13.0.jar
 
 
 @rem Execute prac2
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %PRAC2_OPTS%  -classpath "%CLASSPATH%" src.main.java.task2.Task2 %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %PRAC2_OPTS%  -classpath "%CLASSPATH%"  %*
 
 :end
 @rem End local scope for the variables with windows NT shell

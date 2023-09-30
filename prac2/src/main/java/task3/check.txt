@@ -1,0 +1,1 @@
+echo "dbab406bfa473ebf95aa2e34e87ebf64467067ffa0478daa85c48e213b925ed6 *ubuntu-22.04.3-preinstalled-server-armhf+raspi.img.xz" | shasum -a 256 --checkfg

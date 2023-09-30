@@ -24,8 +24,7 @@ import org.apache.commons.io.*;
  */
 public class Task2 {
     public static void inputStreamCopy(File src) {
-        File dst = new File(
-                "/home/stas/University/4_kurs/7_semestr/Client-Server_Apps_Development/prac2/src/main/java/task2/Task2Copies/task2_1copy.txt");
+        File dst = new File(System.getProperty("user.dir") + "/src/main/java/task2/Task2Copies/task2_1copy.txt");
         try (InputStream inputStream = new FileInputStream(src);
                 OutputStream outputStream = new FileOutputStream(dst)) {
             byte[] buffer = new byte[1024];
@@ -41,7 +40,7 @@ public class Task2 {
 
     public static void channelCopy(File src) {
         File dst = new File(
-                "/home/stas/University/4_kurs/7_semestr/Client-Server_Apps_Development/prac2/src/main/java/task2/Task2Copies/task2_2copy.txt");
+                System.getProperty("user.dir") + "/src/main/java/task2/Task2Copies/task2_2copy.txt");
 
         try (FileChannel srcFileChannel = new FileInputStream(src).getChannel();
                 FileChannel dstFileChannel = new FileOutputStream(dst).getChannel()) {
@@ -59,21 +58,22 @@ public class Task2 {
         }
     }
 
-    public static void apacheCopy(File src) {
-        File dst = new File(
-                "/home/stas/University/4_kurs/7_semestr/Client-Server_Apps_Development/prac2/src/main/java/task2/Task2Copies/task2_3copy.txt");
-        try {
-            FileUtils.copyFile(src, dst);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+    // public static void apacheCopy(File src) {
+    //     File dst = new File(
+    //             System.getProperty("user.dir") +
+    //                     "/src/main/java/task2/Task2Copies/task2_3copy.txt");
+    //     try {
+    //         FileUtils.copyFile(src, dst);
+    //     } catch (IOException e) {
+    //         e.printStackTrace();
+    //     }
+    // }
 
     public static void filesClassCopy() {
         Path src = Paths.get(
-                "/home/stas/University/4_kurs/7_semestr/Client-Server_Apps_Development/prac2/src/main/java/task2/task2.txt");
+                System.getProperty("user.dir") + "/src/main/java/task2/task2.txt");
         Path dst = Paths.get(
-                "/home/stas/University/4_kurs/7_semestr/Client-Server_Apps_Development/prac2/src/main/java/task2/Task2Copies/task2_4copy.txt");
+                System.getProperty("user.dir") + "/src/main/java/task2/Task2Copies/task2_4copy.txt");
         try {
             Files.copy(src, dst);
 
@@ -86,7 +86,7 @@ public class Task2 {
 
     public static void main(String[] args) {
         File src = new File(
-                "/home/stas/University/4_kurs/7_semestr/Client-Server_Apps_Development/prac2/src/main/java/task2/task2.txt");
+                System.getProperty("user.dir") + "/src/main/java/task2/task2.txt");
         long s1 = System.currentTimeMillis();
         inputStreamCopy(src);
         long e1 = System.currentTimeMillis();
@@ -96,12 +96,13 @@ public class Task2 {
         long e2 = System.currentTimeMillis();
 
         long s3 = System.currentTimeMillis();
-        filesClassCopy();
+        // apacheCopy(src);
         long e3 = System.currentTimeMillis();
 
         long s4 = System.currentTimeMillis();
-        apacheCopy(src);
+        filesClassCopy();
         long e4 = System.currentTimeMillis();
+
         System.out.println("FileInputStream/FileOutputStream: " + (e1 - s1) + " ms.");
         System.out.println("FileChannel: " + (e2 - s2) + " ms.");
         System.out.println("Apache Commons IO: " + (e3 - s3) + " ms.");
