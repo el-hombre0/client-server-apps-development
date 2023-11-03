@@ -7,7 +7,7 @@ repositories {
 jar {
     manifest {
         attributes (
-            'Main-Class': 'ex1.Ex1'
+            'Main-Class': 'task1.Task1'
         )
     }
 }

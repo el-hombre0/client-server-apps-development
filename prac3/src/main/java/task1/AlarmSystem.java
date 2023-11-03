@@ -49,8 +49,8 @@ public class AlarmSystem implements Observer{
     public void onNext(@NonNull Object o) {
         Map<String, Float> sensorsData = (HashMap) o;
         System.out.println("\t" + sensorsState(sensorsData.get(SensorsEnum.TEMPERATURE), sensorsData.get(SensorsEnum.CO2)).getMessage() +
-                "|\t" + SensorsEnum.TEMPERATURE + ": " + sensorsData.get(SensorsEnum.TEMPERATURE) +
-                " | " + SensorsEnum.CO2 + ": " + sensorsData.get(SensorsEnum.CO2));
+                "\t|\t" + SensorsEnum.TEMPERATURE + ": " + sensorsData.get(SensorsEnum.TEMPERATURE) +
+                "  " + SensorsEnum.CO2 + ": " + sensorsData.get(SensorsEnum.CO2));
     }
 
     /**

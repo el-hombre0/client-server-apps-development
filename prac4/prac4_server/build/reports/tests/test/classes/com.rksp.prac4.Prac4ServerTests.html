@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Prac4ServerTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Prac4ServerTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.rksp.prac4.html">com.rksp.prac4</a> &gt; Prac4ServerTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.769s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testAddOrder()</td>
+<td class="success">0.095s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteOrder()</td>
+<td class="success">1.345s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetOrder()</td>
+<td class="success">0.212s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetOrders()</td>
+<td class="success">0.117s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>11:07:01.222 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+11:07:01.243 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+11:07:01.315 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.rksp.prac4.Prac4ServerTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+11:07:01.334 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.rksp.prac4.Prac4ServerTests], using SpringBootContextLoader
+11:07:01.342 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.rksp.prac4.Prac4ServerTests]: class path resource [com/rksp/prac4/Prac4ServerTests-context.xml] does not exist
+11:07:01.344 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.rksp.prac4.Prac4ServerTests]: class path resource [com/rksp/prac4/Prac4ServerTestsContext.groovy] does not exist
+11:07:01.344 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.rksp.prac4.Prac4ServerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:07:01.346 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.rksp.prac4.Prac4ServerTests]: Prac4ServerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:07:01.430 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.rksp.prac4.Prac4ServerTests]
+11:07:01.525 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/stas/University/4_kurs/7_semestr/Client-Server_Apps_Development/prac4/prac4_server/build/classes/java/main/com/rksp/prac4/Prac4Server.class]
+11:07:01.527 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.rksp.prac4.Prac4Server for test class com.rksp.prac4.Prac4ServerTests
+11:07:01.685 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.rksp.prac4.Prac4ServerTests]: using defaults.
+11:07:01.686 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11:07:01.715 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@10fde30a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@f27ea3, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1ce61929, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@346939bf, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4bf3798b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@58670130, org.springframework.test.context.transaction.TransactionalTestExecutionListener@74e47444, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@9bd0fa6, org.springframework.test.context.event.EventPublishingTestExecutionListener@59d2103b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@39dcf4b0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6e4de19b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@f6c03cb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@46f699d5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@18518ccf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1991f767]
+11:07:01.722 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@18f20260 testClass = Prac4ServerTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4ae33a11 testClass = Prac4ServerTests, locations = '{}', classes = '{class com.rksp.prac4.Prac4Server}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7a1234bf, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@65a15628, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7e4204e2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1b955cac, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@bcef303, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@63787180, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@e7edb54], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+11:07:01.746 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@18f20260 testClass = Prac4ServerTests, testInstance = com.rksp.prac4.Prac4ServerTests@1536602f, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4ae33a11 testClass = Prac4ServerTests, locations = '{}', classes = '{class com.rksp.prac4.Prac4Server}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7a1234bf, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@65a15628, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7e4204e2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1b955cac, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@bcef303, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@63787180, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@e7edb54], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.17)
+
+2023-11-03 11:07:02.519  INFO 20039 --- [    Test worker] com.rksp.prac4.Prac4ServerTests          : Starting Prac4ServerTests using Java 11.0.20.1 on ASUSLaptop with PID 20039 (started by stas in /home/stas/University/4_kurs/7_semestr/Client-Server_Apps_Development/prac4/prac4_server)
+2023-11-03 11:07:02.525  INFO 20039 --- [    Test worker] com.rksp.prac4.Prac4ServerTests          : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-11-03 11:07:04.007  INFO 20039 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-03 11:07:04.257  INFO 20039 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 234 ms. Found 1 JPA repository interfaces.
+2023-11-03 11:07:05.693  INFO 20039 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-11-03 11:07:05.715  INFO 20039 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-03 11:07:05.716  INFO 20039 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-03 11:07:05.984  INFO 20039 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-03 11:07:05.985  INFO 20039 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3397 ms
+2023-11-03 11:07:06.627  INFO 20039 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-03 11:07:06.738  INFO 20039 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-11-03 11:07:07.102  INFO 20039 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-11-03 11:07:07.289  INFO 20039 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-03 11:07:07.867  INFO 20039 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-03 11:07:07.940  INFO 20039 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-11-03 11:07:09.099  INFO 20039 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-03 11:07:09.115  INFO 20039 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-03 11:07:11.911  INFO 20039 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 43365 (http) with context path ''
+2023-11-03 11:07:12.210  INFO 20039 --- [    Test worker] o.s.b.rsocket.netty.NettyRSocketServer   : Netty RSocket started on port(s): 5200
+2023-11-03 11:07:12.235  INFO 20039 --- [    Test worker] com.rksp.prac4.Prac4ServerTests          : Started Prac4ServerTests in 10.442 seconds (JVM running for 12.443)
+Hibernate: select nextval ('public.hibernate_sequence')
+Hibernate: insert into public.order (car_model, client_name, client_phone, cost, distance_to_client, required_kilo_watts, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select order0_.id as id1_0_, order0_.car_model as car_mode2_0_, order0_.client_name as client_n3_0_, order0_.client_phone as client_p4_0_, order0_.cost as cost5_0_, order0_.distance_to_client as distance6_0_, order0_.required_kilo_watts as required7_0_ from public.order order0_ where order0_.id=?
+Hibernate: select order0_.id as id1_0_, order0_.car_model as car_mode2_0_, order0_.client_name as client_n3_0_, order0_.client_phone as client_p4_0_, order0_.cost as cost5_0_, order0_.distance_to_client as distance6_0_, order0_.required_kilo_watts as required7_0_ from public.order order0_ where order0_.id=?
+Hibernate: select order0_.id as id1_0_0_, order0_.car_model as car_mode2_0_0_, order0_.client_name as client_n3_0_0_, order0_.client_phone as client_p4_0_0_, order0_.cost as cost5_0_0_, order0_.distance_to_client as distance6_0_0_, order0_.required_kilo_watts as required7_0_0_ from public.order order0_ where order0_.id=?
+Hibernate: delete from public.order where id=?
+Hibernate: select nextval ('public.hibernate_sequence')
+Hibernate: insert into public.order (car_model, client_name, client_phone, cost, distance_to_client, required_kilo_watts, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select order0_.id as id1_0_, order0_.car_model as car_mode2_0_, order0_.client_name as client_n3_0_, order0_.client_phone as client_p4_0_, order0_.cost as cost5_0_, order0_.distance_to_client as distance6_0_, order0_.required_kilo_watts as required7_0_ from public.order order0_ where order0_.id=?
+Hibernate: select nextval ('public.hibernate_sequence')
+Hibernate: insert into public.order (car_model, client_name, client_phone, cost, distance_to_client, required_kilo_watts, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: select order0_.id as id1_0_, order0_.car_model as car_mode2_0_, order0_.client_name as client_n3_0_, order0_.client_phone as client_p4_0_, order0_.cost as cost5_0_, order0_.distance_to_client as distance6_0_, order0_.required_kilo_watts as required7_0_ from public.order order0_
+2023-11-03 11:07:14.020  WARN 20039 --- [tor-tcp-epoll-5] reactor.core.publisher.Operators         : Error in discard hook
+
+java.lang.ClassCastException: class org.springframework.core.io.buffer.NettyDataBuffer cannot be cast to class io.netty.util.ReferenceCounted (org.springframework.core.io.buffer.NettyDataBuffer and io.netty.util.ReferenceCounted are in unnamed module of loader 'app')
+	at java.base/java.util.function.Consumer.lambda$andThen$0(Consumer.java:65) ~[na:na]
+	at java.base/java.util.function.Consumer.lambda$andThen$0(Consumer.java:65) ~[na:na]
+	at reactor.core.publisher.Operators.onDiscard(Operators.java:441) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.MonoZip$ZipInner.cancel(MonoZip.java:388) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.MonoZip$ZipCoordinator.cancel(MonoZip.java:272) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.cancel(FluxMap.java:300) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.cancel(FluxContextWrite.java:141) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.cancel(FluxContextWrite.java:141) ~[reactor-core-3.4.33.jar:3.4.33]
+	at io.rsocket.core.DefaultRSocketClient$FlatMapMain.cancel(DefaultRSocketClient.java:331) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.DefaultRSocketClient$FlattingInner.cancel(DefaultRSocketClient.java:463) ~[rsocket-core-1.1.3.jar:na]
+	at reactor.core.publisher.FluxMap$MapSubscriber.cancel(FluxMap.java:169) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.FluxMap$MapSubscriber.cancel(FluxMap.java:169) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.BlockingSingleSubscriber.dispose(BlockingSingleSubscriber.java:70) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.BlockingFirstSubscriber.onNext(BlockingFirstSubscriber.java:31) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.4.33.jar:3.4.33]
+	at io.rsocket.core.ResolvingOperator$DeferredResolution.onNext(ResolvingOperator.java:513) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.RequestStreamRequesterFlux.handlePayload(RequestStreamRequesterFlux.java:330) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.ReassemblyUtils.handleNextSupport(ReassemblyUtils.java:94) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.RequestStreamRequesterFlux.handleNext(RequestStreamRequesterFlux.java:407) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.RSocketRequester.handleFrame(RSocketRequester.java:255) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.RSocketRequester.handleIncomingFrames(RSocketRequester.java:211) ~[rsocket-core-1.1.3.jar:na]
+	at reactor.core.publisher.LambdaSubscriber.onNext(LambdaSubscriber.java:160) ~[reactor-core-3.4.33.jar:3.4.33]
+	at io.rsocket.core.ClientServerInputMultiplexer$InternalDuplexConnection.onNext(ClientServerInputMultiplexer.java:248) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.ClientServerInputMultiplexer.onNext(ClientServerInputMultiplexer.java:129) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.ClientServerInputMultiplexer.onNext(ClientServerInputMultiplexer.java:48) ~[rsocket-core-1.1.3.jar:na]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:377) ~[reactor-netty-core-1.0.38.jar:1.0.38]
+	at reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:417) ~[reactor-netty-core-1.0.38.jar:1.0.38]
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:114) ~[reactor-netty-core-1.0.38.jar:1.0.38]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:333) ~[netty-codec-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:454) ~[netty-codec-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:800) ~[netty-transport-classes-epoll-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:509) ~[netty-transport-classes-epoll-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:407) ~[netty-transport-classes-epoll-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.100.Final.jar:4.1.100.Final]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2023-11-03 11:07:14.029  WARN 20039 --- [tor-tcp-epoll-5] reactor.core.publisher.Operators         : Error in discard hook
+
+java.lang.ClassCastException: class org.springframework.core.io.buffer.NettyDataBuffer cannot be cast to class io.netty.util.ReferenceCounted (org.springframework.core.io.buffer.NettyDataBuffer and io.netty.util.ReferenceCounted are in unnamed module of loader 'app')
+	at java.base/java.util.function.Consumer.lambda$andThen$0(Consumer.java:65) ~[na:na]
+	at java.base/java.util.function.Consumer.lambda$andThen$0(Consumer.java:65) ~[na:na]
+	at reactor.core.publisher.Operators.onDiscard(Operators.java:441) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.MonoZip$ZipInner.cancel(MonoZip.java:388) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.MonoZip$ZipCoordinator.cancel(MonoZip.java:272) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.cancel(FluxMap.java:300) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.cancel(FluxContextWrite.java:141) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.cancel(FluxContextWrite.java:141) ~[reactor-core-3.4.33.jar:3.4.33]
+	at io.rsocket.core.DefaultRSocketClient$FlatMapMain.cancel(DefaultRSocketClient.java:331) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.DefaultRSocketClient$FlattingInner.cancel(DefaultRSocketClient.java:463) ~[rsocket-core-1.1.3.jar:na]
+	at reactor.core.publisher.FluxMap$MapSubscriber.cancel(FluxMap.java:169) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.FluxMap$MapSubscriber.cancel(FluxMap.java:169) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.BlockingSingleSubscriber.dispose(BlockingSingleSubscriber.java:70) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.BlockingFirstSubscriber.onNext(BlockingFirstSubscriber.java:31) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.4.33.jar:3.4.33]
+	at io.rsocket.core.ResolvingOperator$DeferredResolution.onNext(ResolvingOperator.java:513) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.RequestStreamRequesterFlux.handlePayload(RequestStreamRequesterFlux.java:330) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.ReassemblyUtils.handleNextSupport(ReassemblyUtils.java:94) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.RequestStreamRequesterFlux.handleNext(RequestStreamRequesterFlux.java:407) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.RSocketRequester.handleFrame(RSocketRequester.java:255) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.RSocketRequester.handleIncomingFrames(RSocketRequester.java:211) ~[rsocket-core-1.1.3.jar:na]
+	at reactor.core.publisher.LambdaSubscriber.onNext(LambdaSubscriber.java:160) ~[reactor-core-3.4.33.jar:3.4.33]
+	at io.rsocket.core.ClientServerInputMultiplexer$InternalDuplexConnection.onNext(ClientServerInputMultiplexer.java:248) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.ClientServerInputMultiplexer.onNext(ClientServerInputMultiplexer.java:129) ~[rsocket-core-1.1.3.jar:na]
+	at io.rsocket.core.ClientServerInputMultiplexer.onNext(ClientServerInputMultiplexer.java:48) ~[rsocket-core-1.1.3.jar:na]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122) ~[reactor-core-3.4.33.jar:3.4.33]
+	at reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:377) ~[reactor-netty-core-1.0.38.jar:1.0.38]
+	at reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:417) ~[reactor-netty-core-1.0.38.jar:1.0.38]
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:114) ~[reactor-netty-core-1.0.38.jar:1.0.38]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:333) ~[netty-codec-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:454) ~[netty-codec-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:800) ~[netty-transport-classes-epoll-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:509) ~[netty-transport-classes-epoll-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:407) ~[netty-transport-classes-epoll-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.100.Final.jar:4.1.100.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.100.Final.jar:4.1.100.Final]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.3</a> at 3 нояб. 2023 г., 11:07:16</p>
+</div>
+</div>
+</body>
+</html>

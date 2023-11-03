@@ -48,9 +48,7 @@ public class Task1 {
     }
 
     public Task1() {
-        /**
-         * Observer
-         */
+        // Observer
         AlarmSystem alarmSystem = new AlarmSystem(normalCO2, normalTemperature);
 
         // Объединение observable в один

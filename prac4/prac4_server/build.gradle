@@ -1,0 +1,44 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.7.17'
+	id 'io.spring.dependency-management' version '1.1.3'
+}
+
+group = 'com.rksp'
+version = '0.0.1-SNAPSHOT'
+
+ java {
+ 	sourceCompatibility = '11'
+ }
+//compileOptions {
+//    sourceCompatibility 11
+//    targetCompatibility 11
+//}
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-rsocket'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'org.postgresql:postgresql'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'io.projectreactor:reactor-test'
+	testImplementation 'org.springframework.boot:spring-boot-starter-webflux'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+//jar {
+//  manifest {
+//    attributes 'Main-Class': 'src/main/java/com/rksp/prac4/Prac4Server.java'
+//  }
+//  from {
+//    configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+//  }
+//}
