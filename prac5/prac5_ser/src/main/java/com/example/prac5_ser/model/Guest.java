@@ -1,7 +1,10 @@
 package com.example.prac5_ser.model;
 
+import lombok.Getter;
+
 import javax.persistence.*;
 
+@Getter
 @Entity
 @Table(name = "guest")
 public class Guest {
@@ -38,24 +41,8 @@ public class Guest {
         this.firstName = firstName;
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public String getEmail() {
-        return email;
     }
 
     public void setEmail(String email) {
