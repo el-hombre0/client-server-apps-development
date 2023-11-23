@@ -4,7 +4,6 @@ import com.example.prac5_ser.message.ResponseMessage;
 import org.springframework.web.multipart.MaxUploadSizeExceededException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-//import com.bezkoder.spring.files.upload.model.ResponseMessage;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

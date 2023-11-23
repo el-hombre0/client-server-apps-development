@@ -2,11 +2,11 @@ package com.example.prac5_ser;
 
 import com.example.prac5_ser.service.FilesStorageService;
 
+import jakarta.annotation.Resource;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import javax.annotation.Resource;
 
 
 @SpringBootApplication
