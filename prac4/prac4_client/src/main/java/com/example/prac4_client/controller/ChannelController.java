@@ -1,6 +1,5 @@
 package com.example.prac4_client.controller;
 
-import com.example.prac4_client.DTO.OrderListWrapper;
 import com.example.prac4_client.model.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.rsocket.RSocketRequester;
@@ -26,10 +25,8 @@ public class ChannelController {
 
 
     @PostMapping("/exp")
-//    public Flux<Order> addOrdersMultiple(@RequestBody OrderListWrapper orderListWrapper) {
     public Flux<Order> addOrdersMultiple(@RequestBody List<Order> orderList) {
 
-//        List<Order> orderList = orderListWrapper.getOrders();
         Flux<Order> orders = Flux.fromIterable(orderList);
         return rSocketRequester
                 .route("orderChannel")
