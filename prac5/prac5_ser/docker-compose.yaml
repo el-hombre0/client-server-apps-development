@@ -1,0 +1,56 @@
+version: '3.8'
+services:
+  app1:
+    container_name: app1
+    build: .
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}
+      - SPRING_DATASOURCE_USERNAME=${DATABASE_USERNAME}
+      - SPRING_DATASOURCE_PASSWORD=${DATABASE_PASSWORD}
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    ports:
+      - '8090:${BACKEND_PORT}'
+    restart: on-failure
+    depends_on:
+      car_system_db:
+        condition: service_healthy
+
+  app2:
+    container_name: app2
+    build: .
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}
+      - SPRING_DATASOURCE_USERNAME=${DATABASE_USERNAME}
+      - SPRING_DATASOURCE_PASSWORD=${DATABASE_PASSWORD}
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    ports:
+      - '8091:${BACKEND_PORT}'
+    restart: on-failure
+    depends_on:
+      car_system_db:
+        condition: service_healthy
+
+  proxy:
+    build: nginx/
+    ports:
+      - "8080:80"
+    container_name: nginx
+    depends_on:
+      - app1
+      - app2
+
+  car_system_db:
+    container_name: ${DATABASE_HOST}
+    image: postgres
+    environment:
+      - POSTGRES_USER=${DATABASE_USERNAME}
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+      - POSTGRES_DB=${DATABASE_NAME}
+    command: postgres -p ${DATABASE_PORT}
+    ports:
+      - ${DATABASE_PORT}:${DATABASE_PORT}
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -d $${POSTGRES_DB} -U $${POSTGRES_USER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
