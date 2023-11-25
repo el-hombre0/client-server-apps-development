@@ -9,7 +9,7 @@ services:
       - SPRING_DATASOURCE_PASSWORD=${DATABASE_PASSWORD}
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
     ports:
-      - '8090:${BACKEND_PORT}'
+      - '8080:${BACKEND_PORT}'
     restart: on-failure
     depends_on:
       car_system_db:
@@ -24,20 +24,53 @@ services:
       - SPRING_DATASOURCE_PASSWORD=${DATABASE_PASSWORD}
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
     ports:
-      - '8091:${BACKEND_PORT}'
+      - '8081:${BACKEND_PORT}'
     restart: on-failure
     depends_on:
       car_system_db:
         condition: service_healthy
 
+  app3:
+    container_name: app3
+    build: .
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}
+      - SPRING_DATASOURCE_USERNAME=${DATABASE_USERNAME}
+      - SPRING_DATASOURCE_PASSWORD=${DATABASE_PASSWORD}
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    ports:
+      - '8082:${BACKEND_PORT}'
+    restart: on-failure
+    depends_on:
+      car_system_db:
+        condition: service_healthy
+        
+  app4:
+    container_name: app4
+    build: .
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_NAME}
+      - SPRING_DATASOURCE_USERNAME=${DATABASE_USERNAME}
+      - SPRING_DATASOURCE_PASSWORD=${DATABASE_PASSWORD}
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    ports:
+      - '8083:${BACKEND_PORT}'
+    restart: on-failure
+    depends_on:
+      car_system_db:
+        condition: service_healthy
+        
   proxy:
     build: nginx/
     ports:
-      - "8080:80"
-    container_name: nginx
+      - "80:80"
+    container_name: proxy
+    # network_mode: host
     depends_on:
       - app1
       - app2
+      - app3
+      - app4
 
   car_system_db:
     container_name: ${DATABASE_HOST}
