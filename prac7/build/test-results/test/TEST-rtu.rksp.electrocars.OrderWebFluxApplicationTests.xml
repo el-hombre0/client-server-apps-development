@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rtu.rksp.electrocars.OrderWebFluxApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-12-15T10:11:39" hostname="ASUSLaptop" time="0.03">
+  <properties/>
+  <testcase name="contextLoads()" classname="rtu.rksp.electrocars.OrderWebFluxApplicationTests" time="0.03"/>
+  <system-out><![CDATA[13:11:31.757 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [rtu.rksp.electrocars.OrderWebFluxApplicationTests]: OrderWebFluxApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:11:31.998 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration rtu.rksp.electrocars.OrderWebFluxApplication for test class rtu.rksp.electrocars.OrderWebFluxApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2023-12-15T13:11:33.301+03:00  INFO 12457 --- [    Test worker] r.r.e.OrderWebFluxApplicationTests       : Starting OrderWebFluxApplicationTests using Java 17.0.9 with PID 12457 (started by stas in /home/stas/University/4_kurs/7_semestr/Client-Server_Apps_Development/Code/WebFluxServer_PR7)
+2023-12-15T13:11:33.305+03:00  INFO 12457 --- [    Test worker] r.r.e.OrderWebFluxApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2023-12-15T13:11:35.409+03:00  INFO 12457 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2023-12-15T13:11:35.538+03:00  INFO 12457 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 1 R2DBC repository interfaces.
+2023-12-15T13:11:37.884+03:00  WARN 12457 --- [tor-tcp-epoll-1] i.r.p.client.ReactorNettyClient          : Notice: SEVERITY_LOCALIZED=NOTICE, SEVERITY_NON_LOCALIZED=NOTICE, CODE=42P07, MESSAGE=relation "orders" already exists, skipping, FILE=parse_utilcmd.c, LINE=207, ROUTINE=transformCreateStmt
+2023-12-15T13:11:39.741+03:00  INFO 12457 --- [    Test worker] r.r.e.OrderWebFluxApplicationTests       : Started OrderWebFluxApplicationTests in 7.266 seconds (process running for 13.196)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rtu.rksp.electrocars.OrderControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-12-15T10:11:28" hostname="ASUSLaptop" time="2.677">
+  <properties/>
+  <testcase name="testDeleteOrder()" classname="rtu.rksp.electrocars.OrderControllerTest" time="2.623"/>
+  <testcase name="testUpdateOrder()" classname="rtu.rksp.electrocars.OrderControllerTest" time="0.015"/>
+  <testcase name="testCreateOrder()" classname="rtu.rksp.electrocars.OrderControllerTest" time="0.004"/>
+  <testcase name="testGetAllOrders()" classname="rtu.rksp.electrocars.OrderControllerTest" time="0.016"/>
+  <testcase name="testGetCatById()" classname="rtu.rksp.electrocars.OrderControllerTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
